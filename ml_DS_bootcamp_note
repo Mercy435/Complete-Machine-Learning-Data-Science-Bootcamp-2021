@@ -1,0 +1,132 @@
+numpy is the a fundamental tool for all data scientists
+scikitlearn helps to create models for ml--supervised learning(regression and classification), neural networks(transfer
+learning and deep learning)
+use of tensorflow and keras, gpus...graphic processing units
+data engineering
+story telling and communication
+
+WHAT IS MACHINE LEARNING?
+programming is the way we communicate to computers; giving it set of instructions to carry out a specific task
+coding is writing code, programming us creating a functioning software or program
+app
+self driving cars
+robots
+stock price prediction
+image processing
+Ml helps machines be more like humans
+
+AI-a human intelligence exhibited by machines; a machine that act like human
+narrowAI -machines being as good or better at specific task than humans
+generalAI- when machines are good at diff things like humans,, we are far from this
+
+ML is a subset of AI. it is an approach to achieve AI though systems that find patterns in a set of data
+ML -a sc of getting computers to act without being explicitly programmed.. without saying if this then this...
+deep learning /deep neural network is a technique/algorithm for implementing ML
+
+DAta SCience- it overlaps with ML:analying data, usually for a business goal.
+
+ML is predicting results based on incoming data..ml(supervised, unsupervised, reinforcement)
+supervised- has rows and columns, labelled---classification, regression(predicting stock prices)
+unsupervised-- no label(clustering, association rule learning)-machine det groups
+reinforcement-- teach machines thru trail and error, reward and punishment
+
+Algorithms
+knn, decision trees, neural network, support vector machines,svm
+
+ML: using an algorithm(model) or computer programs to learn about diff patterns in data, and using those algorithms and what
+it has learnt to predict future occurrences using similar data
+
+ML: input, an ideal output; the algorithm then figures out the set of instructions btw the two
+
+data analysis is looking at a data and gaining understanding by comparing several sets of it
+data science is running experiments on a set of data with the hope of gaining insights
+data analysis and ML are parts of data sc
+
+Machine -data collection, data modelling, deployment
+data modelling- create a framework, match to DS and ML tools,
+1. problem definition(supervised, ...)
+2. Data(what kind of data.. structured e.h. spreadsheet or unstructed e.g. images, audio
+3. evaluation(define what success is.. 95% accuracy
+4. features(what dio we know about the data e.g. weight
+5. modelling(based on problem and data, what model should i use
+6. experimentation(improve)
+
+PROBLEM DEFINITION
+match the problem to the types of ML
+1. SUPERVISED LEARNING:data and labels . uses data to predict a label, algorithm corrects itself if there is an error
+and tries again
+classification-predicting if sth is one thing or the other.. binary classification has two options/classes.... multi-
+class classification is for 3 or more classes
+Regression- trying to predict a number, a continuous number that can go up or down
+
+2. UNSUPERVISED LEARNING: no labels just data; group similar data; use patterns to provide the label... clustering
+putting groups of similar data together
+
+3. TRANSFER LEARNING: leveraging on what an existing ML model has learned instead of starting from scratch
+4. REINFORCEMENT LEARNING: trial and error, reward and punishment e.g. playing chess
+
+DATA
+kinds
+structured- rows and columns, excel files
+unstructured- images, audios, vidoes,email,
+static data- doesnt change over time
+streaming data- data which is constantly changed over time
+
+EVALUATION
+how well a ML algorithm predicts the future-99% accuracy
+whats ur evaluation metric
+classification(accuracy, precision, recall)
+regression(mean absolute error,MAE, mean squared error,MSE, root mean squared error, RMSE)
+recommendation(precision at k)
+
+FEATURES
+what we know about the data
+forms of structured and unstructured data
+e.g. weight,sex.....
+we use feature variable(numerical, number, or categorical, yes/no, true/false, one_thing/another, or derived, deduced
+from the data) to predict target variable
+feature engineering- process of deriving feature out of data
+
+unstructured data also has features but they arent noticed easily as they arent spelt out in a table
+features work best in a ML algorithm if all/most of the samples have it- this is called feature coverage
+
+MODELLING
+1. choosing and training a model
+2. tuning a model
+3. model comparison
+most important concept in ML: training(70-80%), validation(tune model on, 10-15%), test sets(10-15%) or 3sets
+Generalization : ability for a ML to perform well on data it hasnt seen before becos of wat its learnt on anotehr dataset
+
+structured data- decision tree(random forest) and gradient boosting algorithm(catboost, xgboost)
+unstructured data - deep learning, neural networks, transfer learning)
+
+after choosing a model, train it(use x(data) to produce y(label)
+when training a model, minimize time btw experiments.. use small portion of data first, use less complicated models to
+begin with.. then add complexities
+
+improving the model involves tuning it for diff types of data. on a training or and a validation(development)  dataset
+random trees can allow adjust trees to 3,5
+neural networks allow to adjust layers, 2,3,
+ML have hyperparameters that can be adjusted to make model better
+
+a good model yield similar result on training and test set
+e.g training 98% test 96%
+if the training set is higher than the test set- UNDERFITTING
+if test set is higher than training set - OVERFITTING
+these describes model that cant generalize
+Data leakage(test data leaks to training data) and Data mismatch(diff data for train and test) causes over and under fittings
+solutions to fitting problems
+UNDERFITTING
+1. use a more advanced model
+2. increase model hyperparameters
+3. reduce amount of features
+4. train longer
+OVERFITTING(too perfect)
+1. collect more data
+2. try less advanced data
+
+EXPERIMENTATION
+these steps are iterative
+
+QUESTIONS
+1. markdown code for importing images in folder 5 video 12
