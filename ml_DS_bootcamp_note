@@ -130,3 +130,14 @@ these steps are iterative
 
 QUESTIONS
 1. markdown code for importing images in folder 5 video 12
+2. locating jupyter file path... cant do an insatll or upgrade 
+3. update sklearn to comform to 100 n_estimators
+4. do an automatic numbering on jupyter
+5. folder 8, vidoe 16, explain np.random.seed(42)
+6. folder 8 vidoe 16,, turning boston dataset to a df
+7. linearsvc folder9, vidoes 20/21
+8. input 112, 94
+9. video 41 .... name accuracy, pecision... not defined error
+9 affects the rest of the videos
+10. cant ctivate conda env using terminal
+11. folder 11, video 13... despite using random seed we still got varying answers... y?
