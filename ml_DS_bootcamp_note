@@ -1,0 +1,399 @@
+numpy is the a fundamental tool for all data scientists
+scikitlearn helps to create models for ml--supervised learning(regression and classification), neural networks(transfer
+learning and deep learning)
+use of tensorflow and keras, gpus...graphic processing units
+data engineering
+story telling and communication
+
+WHAT IS MACHINE LEARNING?
+programming is the way we communicate to computers; giving it set of instructions to carry out a specific task
+coding is writing code, programming us creating a functioning software or program
+app
+self driving cars
+robots
+stock price prediction
+image processing
+Ml helps machines be more like humans
+
+AI-a human intelligence exhibited by machines; a machine that act like human
+narrowAI -machines being as good or better at specific task than humans
+generalAI- when machines are good at diff things like humans,, we are far from this
+
+ML is a subset of AI. it is an approach to achieve AI though systems that find patterns in a set of data
+ML -a sc of getting computers to act without being explicitly programmed.. without saying if this then this...
+deep learning /deep neural network is a technique/algorithm for implementing ML
+
+DAta SCience- it overlaps with ML:analying data, usually for a business goal.
+
+ML is predicting results based on incoming data..ml(supervised, unsupervised, reinforcement)
+supervised- has rows and columns, labelled---classification, regression(predicting stock prices)
+unsupervised-- no label(clustering, association rule learning)-machine det groups
+reinforcement-- teach machines thru trail and error, reward and punishment
+
+Algorithms
+knn, decision trees, neural network, support vector machines,svm
+
+ML: using an algorithm(model) or computer programs to learn about diff patterns in data, and using those algorithms and what
+it has learnt to predict future occurrences using similar data
+
+ML: input, an ideal output; the algorithm then figures out the set of instructions btw the two
+
+data analysis is looking at a data and gaining understanding by comparing several sets of it
+data science is running experiments on a set of data with the hope of gaining insights
+data analysis and ML are parts of data sc
+
+Machine -data collection, data modelling, deployment
+data modelling- create a framework, match to DS and ML tools,
+1. problem definition(supervised, ...)
+2. Data(what kind of data.. structured e.h. spreadsheet or unstructed e.g. images, audio
+3. evaluation(define what success is.. 95% accuracy
+4. features(what dio we know about the data e.g. weight
+5. modelling(based on problem and data, what model should i use
+6. experimentation(improve)
+
+PROBLEM DEFINITION
+match the problem to the types of ML
+1. SUPERVISED LEARNING:data and labels . uses data to predict a label, algorithm corrects itself if there is an error
+and tries again
+classification-predicting if sth is one thing or the other.. binary classification has two options/classes.... multi-
+class classification is for 3 or more classes
+Regression- trying to predict a number, a continuous number that can go up or down
+
+2. UNSUPERVISED LEARNING: no labels just data; group similar data; use patterns to provide the label... clustering
+putting groups of similar data together
+
+3. TRANSFER LEARNING: leveraging on what an existing ML model has learned instead of starting from scratch
+4. REINFORCEMENT LEARNING: trial and error, reward and punishment e.g. playing chess
+
+DATA
+kinds
+structured- rows and columns, excel files
+unstructured- images, audios, vidoes,email,
+static data- doesnt change over time
+streaming data- data which is constantly changed over time
+
+EVALUATION
+how well a ML algorithm predicts the future-99% accuracy
+whats ur evaluation metric
+classification(accuracy, precision, recall)
+regression(mean absolute error,MAE, mean squared error,MSE, root mean squared error, RMSE)
+recommendation(precision at k)
+
+FEATURES
+what we know about the data
+forms of structured and unstructured data
+e.g. weight,sex.....
+we use feature variable(numerical, number, or categorical, yes/no, true/false, one_thing/another, or derived, deduced
+from the data) to predict target variable
+feature engineering- process of deriving feature out of data
+
+unstructured data also has features but they arent noticed easily as they arent spelt out in a table
+features work best in a ML algorithm if all/most of the samples have it- this is called feature coverage
+
+MODELLING
+1. choosing and training a model
+2. tuning a model
+3. model comparison
+most important concept in ML: training(70-80%), validation(tune model on, 10-15%), test sets(10-15%) or 3sets
+Generalization : ability for a ML to perform well on data it hasnt seen before becos of wat its learnt on anotehr dataset
+
+structured data- decision tree(random forest) and gradient boosting algorithm(catboost, xgboost)
+unstructured data - deep learning, neural networks, transfer learning)
+
+after choosing a model, train it(use x(data) to produce y(label)
+when training a model, minimize time btw experiments.. use small portion of data first, use less complicated models to
+begin with.. then add complexities
+
+improving the model involves tuning it for diff types of data. on a training or and a validation(development)  dataset
+random trees can allow adjust trees to 3,5
+neural networks allow to adjust layers, 2,3,
+ML have hyperparameters that can be adjusted to make model better
+
+a good model yield similar result on training and test set
+e.g training 98% test 96%
+if the training set is higher than the test set- UNDERFITTING
+if test set is higher than training set - OVERFITTING
+these describes model that cant generalize
+Data leakage(test data leaks to training data) and Data mismatch(diff data for train and test) causes over and under fittings
+solutions to fitting problems
+UNDERFITTING
+1. use a more advanced model
+2. increase model hyperparameters
+3. reduce amount of features
+4. train longer
+OVERFITTING(too perfect)
+1. collect more data
+2. try less advanced data
+
+EXPERIMENTATION
+these steps are iterative
+
+Data science is using data to make business decisions(idea)
+one of the ways to do data science is through machine learning( a technique)
+machine learning allows computers automate processes that may be a little too complicated or tedious for humans to solve
+data analysis is a subset that allows us analyse data
+
+Data Engineering -- taking all data points that are incoming from (users, security cameras, iot devices...) and produces it and maintains it so the business has access to the data in an organized format
+data engineers are like the librarians of data
+
+WHAT IS DATA?
+Data is valuable...it can be used to improve businesses
+
+TYPES OF DATA
+1. structured data- data that is organized for us to read (table(attributes are mostly columns and instances are rows) or matrix.. 
+it comes from relational databases(mySQL, poresqueSQL)
+
+2. semi-structured data: in XMl, CSV, json forms... diff extensions to store data.. check kaggle( an open source website to access data in diff formats)
+
+
+1 nd 2 are esily manipulated with pandas 
+
+3. unstructured data- emails, pdfs, doc... its not easily readable and categorizable
+
+4. binary data- audio file, image files, video file,, they are in 1 and 0(binary)..they are not easily categorized
+
+
+DATA MINING-
+preprocessing and extracting some knowledge from data
+
+BIG DATA-
+too much data for one laptop.. it runs on cloud computing or lots of computers such as AWS, AZure and google cloud
+it needs a lot of storage
+
+DATA PIPELINE-
+a  data engineer creates a pipeline that is used to flow from an unknown large amount of data to a pipeline that extracts data to a more useful form..
+
+ A data engineer creates a data pipeline that collects all info from data storage devices into nicely packed dataases for use by companies
+ 
+ 
+ Data engineers build the pipeline that allows data scientists work... they collect data in a way that we can use it for data modelling.
+ 
+ STEPS TAKEN BY A DATA ENGINEER
+1. DATA INGESTION-
+   acquiring data from various sources into a DATA LAKE
+
+2. DATA LAKE-
+   collection of data into one location... pool of raw data
+   
+3. DATA TRANSFORMATION-
+    converting data from one form to another
+    
+4. DATA WAREHOUSE-
+   a place that stores accessible data-- useful for the business... location for structured filtered data that has been processed for a specific use
+   
+   WHY WOULD BUSINESSES DO DATA ENGINEERING
+  1. easy to analyze organized data
+  2. save on storage space
+  3. remove data we dont need
+  
+Kafka --Kadoop, Amazons3, Azure Data lake----- programs built to hild data like a data lake
+
+Amazon Athena, Amazon Redshift, Google BigQuery----- data waerhouses,,, allow engneers analyze structured data
+
+As a ml engineer, we would most likely be using a data lake, cos we need more data
+Data analyst, business intelligence uses data from data warehouse. as it has been cleaned
+ Google BigQuery allows sb with not too much engineering or coding experience to analyze data
+ 
+ 
+A data science or ml can also use data from data warehouse also.
+
+
+THREE MAIN TASKS OF A DATA AENGINEER
+1. build an ETL(Extract-transform-load) pipeline----- they use programming lang like Python, Go, Scla,Java
+2. build analysis tools-----helps to analyze data as the system they put in place is running smoothly and correctly
+3. maintain data warehouse and data lakes--- that they are acessible for other parts of the company to use
+
+TYPES OF DATABASES
+there are many data bases as the are all needed for different things, and they are used based on these needs
+
+Databases are computers that stores files-- stores data saved. and allows access and modification
+
+TYPES
+RElational -- postgreSQL, mySQL that allows us use SQL to write and read to the database
+they couldnt store multiple databases working together
+
+NoSQL-- helps do distributed databases,... diff machines are working as one database e,g, MONGODB
+
+NewSQL-- try to get the best of both databases above,, VAULTDB, Crockroach DB,,, helps distrbution and accuracy
+
+FORMS BASED ON USE
+Search databases--helps search for stuff well (elasticsearch or solar)
+COmputational DB-- Apache Spark.. use data for calculations and computations
+
+
+OLTP-- online transaction processing databases are SQL databases that allows us to make transactions e,g, web app that allows user interactions(store user info, upload photos...) apps can interact databases for user info
+
+OLAP--- online analytical processing used for analytical processes
+
+
+Database is a collection of data--
+helps organize data in useful ways and makes data management easy
+
+DBMS--- collectio of programs that allow access to DB 
+
+In RDBMS -- schema is the raltion btw data and field,,, table oriented
+NRDMS - are document oriented,, each user has its document
+MongoDb has the mongodb query language unlike SQl in relational databases
+
+
+HADOOP
+open sorce distributed processing framework..allows data processing and storage for big data....developed by Yahoo and donated to Apache software foundation.... allows petabytes of data to be stored.... a datalake solution....
+HDFS-hadoop distributed file system-- help store distributed data,,,store data across diff machines
+
+MapReduce-- allow perform jobs on data... for batch procesing using python java... it has been replaced by Apachespark
+
+Hive makes Hadop cluster feel like a relational database even though it isnt.... hive allows SQL commmands.. works like a data warehouse
+
+Hadoop works behind the scene..
+
+
+APACHESPARk and APACHEFLINK
+APache Spark improves Map reduce function in Hadoop.. it does in memory processing which allows processing jobs to be done faster..... a go to batch processing frame work.... can run ETL jobs fast(extract, transform, load).....
+
+real time processing replaces batch processing using Apache Flink.....it offers real time stream processing
+
+BATCH JOBS::::HAdoop, Apache Spark, AWS S3, common databases(mySQL)
+
+STREAM PROCESSING: Kafta is mainly used...read and write data, process and store data ... it receives messages and pass it on to different places...... diff sources are collected and stored in a common place, anf can either br sent to  batxh processors or done real time(Spark streamng, Flink, Storm, Kinesis)
+
+
+ENvironment is a collection on tools and packages
+conda helps create these environments... u can share this conda environ
+this is important so as to avoid dependency issues
+dependency issues occurs when u cant install certain packages u might need for a project... video 4 folder 5
+
+conda create --prefix ./env pandas numpy matplotlib scikit-learn for creating a venv 
+conda is calling our personal assistant conda
+create is for create
+--prefix goes with the create command
+. for this dir, in this space
+env name of the environment we are creating
+pandas....  the libraries we wanna import, query the internet to get these
+
+after the code
+activate the env... conda activate "path to env"
+
+to open jupyter notebook here, jupyter notebook or conda install jupyter
+
+ ctrl+c quits jupyter
+
+u can deactivate using---- conda deactivate in the right path
+
+
+
+                    TENSORFLOW
+a deep learning or numerical computing library..... conceived by google... open source(any one can contribute to it)
+
+it is used to build deep learning and neural networks modles to gain insights out of unstructured data(photos, audio waves, natural lang)
+
+Y TENSORFLOW
+fast deep learning code with python.. works on gpu(graphical processing unit)-- fatser than the regular cpu when doing numerical computing
+acess many pre built deep learning models
+whole stack(preprocess, model,deploy)
+open source(accessible to all)
+
+STRUCTURED DATA
+uses randomforest, catboost, dmlcXGBoost
+UnSTRUCTERED DATA
+model used is neural network---- uses deep learning(tensorflow) and transfer learning(tensorflow hub)
+neural netowrk have nodes which are small models in them selves.. they are work together to figure out stuff
+
+
+DEEP LEARNING
+ is another type of ml... neural network is the type of ml algorithm
+
+the more nodes layers added, the more these nodes can find features or connections..the more they learn.. and get better at identifying the info in unstructured data
+
+TYPES OF DEEP LEARNING PROBLEMS
+1. classification--- kind of dog breeds in an image, whetehr an email is spammed or not.... we have multiclass image classification.
+
+2. Ssequence to Sequence(Seq2seq)-- siri, google translate
+
+3. object detection-- where a specific object is in an image( self driving car)
+
+
+TRANSFER LEARNING
+
+> take what u know on one domain and apply it on another
+> starting from scratch is expensive and time consuming
+
+
+Getting data ready for deep learning is turning data into tensor
+
+
+Google Colab is built on jupyter and has faster numerical computing, hence we gonna use it for unstructured data problems
+
+
+
+STORYTELLING AND COMMUNICATION
+important questions to ask:
+1, Who is it for-- people on your team (boss, project manager, teammates) or people outside your team(clients, customers, fans)
+2, What questions will they have
+3, what needs do they have
+4, what concerns can you address before they arise
+
+all non technical problems are communication problems
+ After knowing who its for,, ask what they need to know
+ 1, hows the project going
+ 2. whats in the way
+ 3. what you have done
+ 4. what you are going to do next
+ 5. why are u doing sth nect
+ 6. who else could help
+ 7. whats not needed
+ 8. where you are stuck
+ 9. whats not clear
+ 10. what questions do u have
+ 11. are u working towards the right thing
+ 12. is there a feedback or advice
+
+if u have issues, communicate with uur manager, he or she is there to help.. tell whats getting in your way
+
+when working on long projects, break them into days and weeks and communicate with team members to get advice
+evaluate what u have done eacch day( whats working, whats not, how can it be improved upon)
+what am i working on next( next course of action based on todays evaluation, why this course of action, whats holding you bk)
+Relate ur evaluations and plans with overall project goal
+Take note of overlaps(if a question gets asked more than once)
+
+
+Before u get a job
+!, get a project to work on weekend basis
+working on ur own projects give u a story to tell
+
+
+presenting it to outside work
+1. dont make ur slides to wordy or hard to read
+ask if what u are saying is clear, ask if tehre is sth they wan to see...
+if you dont knowm say u dont know and u will figure it out and get back to them or if its outside the scope, kindly tell them so
+
+
+know what story u are trying to tel
+be ur biggest fan and ur harshest critic
+how u deliver ur message depends on who it is for, what do they need to know
+
+always write down things
+go for progress
+
+
+github-- do open source projects on ztm
+website (cretive tim, mashup(mountain)  free templates, job board(christine
+1 to 2 big projects'
+blogs(hardest bigget project....
+ these are ways to get experience
+ abiluty to communicate well and manage people is a skill
+ 
+ 
+Googlec colab can be used for transfer and deep learning in the place of jupyter
+
+!unzip "/content/drive/MyDrive/dog-breed-identification.zip" -d "drive/My Drive/Dog_Vision/"  markdown function to unzip file
+
+questions
+1 y do we need to create a separate env in jupyter and downlaood lib when ythe base already has them
+2. how do u share conda env in jupyter 
+3. how to fix name path cos i getb error when i wana activate conda env
+4. how do i get my own project
+5. write down ur projects on ur blog-- what u which u knew earlier, .... series of articles detailing ur work
+6. tensorflow video 20
+7. tensorflow video 22
+8. diff btw keras sequential and functional API
+
